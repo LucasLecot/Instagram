@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Instagram</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+</head>
+<body>
+	<header class="container_header">
+		<nav class="row clearfix">
+			<ul class="large900">
+				<li class="col-s left w8 logo center"><a href=""><img class="w9" src="img/titrelogo.png" alt=""></a></li>
+				
+				<li class="col-s left w9 search"><input class="searchbar" type="text" placeholder="Rechercher" value=""></li>
+				
+				<li class="col-s left icon center"><a href=""></a><img src="img/recherche.png" alt=""></li>
+				
+				<li class="col-s left icon center"><a href=""></a><img src="img/favori.png" alt=""></li>
+				
+				<li class="col-s left icon center"><a href=""><img src="img/profil.png" alt=""></a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="container">
+		<section class="row clearfix">
+			<nav class="headpost">
+				<ul>
+					<li class="col-s left w12"><a href=""><img class="imgprofil" src="img/imgprofil.jpg" alt=""></a></li>
+					<li class="col-s left nomprofil"><a class="linknomprofil" href="">rosebeeff</a></li>
+					<li class="col-s right w11 center heurepost">12 h</li>
+				</ul>
+			</nav>
+			<div>
+				<figure class="col-s left w1 post">
+					<img src="img/photopost.png" alt="">
+				</figure>
+			</div>
+			<article class="textpost">
+				<h2 class="col-s left w1 jaime">23 J'aime</h2>
+				<h3 class="col-s left nomprofil2">rosebeeff</h3>
+				<p class="col-s left description">Lequel de ces objets fut un achat compulsif ?</br>a) la boule disco b) le poupon La bonne réponse n'est pas celle que l'on croit ... #minhetrose</p>
+
+			</article>
+		</section>
+		<section class="ligne"></section>
+		<section class="row clearfix">
+			<article class="commentaire">
+				<ul>
+					<li class="col-s left w12 like coeur"><img id="coeur" src="file:///Users/lucaslecot/Desktop/Instagram/img/likegrey.png" alt="">
+					</li>
+					<li class="col-s left w3 com"><input class="combar" type="text" placeholder="Ajouter un commentaire..."></li>
+					<li class="col-s right w12 plus"><img src="img/plus.png" alt=""></li>
+				</ul>
+			</article>
+		</section>
+	</main>
+	<script>
+		var liked = document.querySelector("#coeur");
+		liked.addEventListener('click', function like() {
+			if (liked.src.includes("img/likegrey.png")) {
+				liked.src = "img/likered.png"
+			} else {
+				liked.src = "img/likegrey.png"
+			}
+		});
+
+	</script>
+</body>
+</html>
